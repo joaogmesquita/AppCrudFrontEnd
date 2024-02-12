@@ -32,11 +32,4 @@ export class ProductsUpdateComponent implements OnInit {
     this.router.navigate(['/products'])
 
   }
-
-  deleteProduct(): void {
-    const id = this.route.snapshot.paramMap.get('id')
-    this.productService.delete(id)
-
-  }
-
 }

@@ -14,14 +14,23 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './views/home/home.component';
 import { MatCardModule } from '@angular/material/card';
-
+import { ProductCrudComponent } from './views/product-crud/product-crud.component';
+import { ProductsCreateComponent } from './components/products/products-create/products-create.component';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    ProductCrudComponent,
+    ProductsCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +39,14 @@ import { MatCardModule } from '@angular/material/card';
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule,
+    MatSnackBarModule,
+    HttpClientModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
